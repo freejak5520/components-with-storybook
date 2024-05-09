@@ -6,6 +6,7 @@
   color: #000000;
   font-size: 1rem;
 }
+
 .button:hover {
   background-color: #b3b3b3;
   transform: scale(1.05);
