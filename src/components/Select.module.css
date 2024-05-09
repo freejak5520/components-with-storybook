@@ -2,14 +2,17 @@
   position: relative;
   width: fit-content;
 
-  border: none;
+  border: 1px solid rgb(228, 228, 231);
   border-radius: 0.25rem;
 
   user-select: none;
 }
 
-.select:hover {
-  background-color: #b3b3b3;
+.selected:hover {
+  background-color: #d5d5d5;
+  transform: scale(1.05);
+  transition: all 100ms linear;
+  border-radius: 0.25rem;
 }
 
 .selected {
@@ -37,7 +40,7 @@
   left: -1px;
   width: 100%;
 
-  border: 1px solid black;
+  border: 1px solid rgb(228, 228, 231);
   border-radius: 4px;
 }
 .options.xs {

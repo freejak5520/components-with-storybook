@@ -9,13 +9,15 @@ type ButtonProps = {
   block?: boolean;
 };
 
-const Button = (
-  props: React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
-) => {
+const Button = ({
+  variant = "default",
+  size = "md",
+  ...props
+}: React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps) => {
   const className = [
     styles.button,
-    styles[props.variant || "default"],
-    styles[props.size || "md"],
+    styles[variant],
+    styles[size],
     props.block && styles.block,
     props.className,
   ].join(" ");
